@@ -1,0 +1,8 @@
+Retrieve a single tourist record using a secure API.
+
+Create POST /api/tourist to add a tourist and GET /api/tourist/{id} to return
+that tourist profile from PostgreSQL database exam_db. Before accessing the
+repository, validate the pre-generated token in the X-Auth-Token request header.
+Return 201 for a successful create, 200 for a valid token and existing tourist,
+401 for a missing or invalid token, and 404 when the tourist does not exist.
+Do not implement token generation.
